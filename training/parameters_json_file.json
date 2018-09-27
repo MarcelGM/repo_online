@@ -1,0 +1,25 @@
+{
+  "file_version": "1",
+  "data": {
+    "data_path": "/disks/md0-4T/users/b.mgm/data/CRF",
+    "train_path": "train.bilou_CRF",
+    "val_path": "validation.bilou_CRF",
+    "test_path": "test.bilou_CRF",
+    "emb_path": "/disks/md0-4T/users/b.mgm/data/embedding/pretrained_embedding.txt"
+  },
+  "parameters": {
+    "fixed": {
+      "max_epochs": 100,
+      "char_emb_dim": 25,
+      "word_emb_dim": 100,
+      "val_batch_size": 64
+    },
+    "iterable": {
+      "char_rnn": [25, 50],
+      "word_min_freq": [0, 5],
+      "train_batch_size": [4,8,16]
+    }
+  },
+  "checkpoints": "/disks/md0-4T/users/b.mgm/checkpoints",
+  "output_name": "training_commands.lst"
+}
