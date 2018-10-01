@@ -24,6 +24,8 @@
   },
   "checkpoints": "/disks/md0-4T/users/b.mgm/checkpoints",
   "output_train": "training_commands.lst",
+  "sort_chekpoints_path": "/disks/md0-4T/users/b.mgm/scripts/sort_checkpoints.sh",
+  "N_best": 10,
   "output_test": "test_commands.lst",
   "logs": "/disks/md0-4T/users/b.mgm/logs"
 }
