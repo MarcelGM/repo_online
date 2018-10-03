@@ -1,12 +1,12 @@
 {
   "file_version": "1",
-  "train.py": "/disks/md0-4T/users/b.mgm/model/train.py",
+  "train.py": "~/work/model/train.py",
   "data": {
-    "data_path": "/disks/md0-4T/users/b.mgm/data/CRF",
+    "data_path": "~/work/data/CRF",
     "train_path": "train.bilou_CRF",
     "val_path": "validation.bilou_CRF",
     "test_path": "test.bilou_CRF",
-    "emb_path": "/disks/md0-4T/users/b.mgm/data/embedding/pretrained_embedding.txt"
+    "emb_path": "~/work/data/embedding/pretrained_embedding.txt"
   },
   "parameters": {
     "fixed": {
@@ -22,11 +22,11 @@
       "train_batch_size": [4,8,16]
     }
   },
-  "checkpoints": "/disks/md0-4T/users/b.mgm/checkpoints",
+  "checkpoints": "~/work/checkpoints",
   "output_train": "training_commands.lst",
   "test_range": [1,6],
   "N_best": 10,
   "output_test": "test_commands.lst",
-  "logs": "/disks/md0-4T/users/b.mgm/logs",
-  "predictions": "/disks/md0-4T/users/b.mgm/predictions"
+  "logs": "~/work/logs",
+  "predictions": "~/work/predictions"
 }
