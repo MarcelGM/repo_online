@@ -1,5 +1,5 @@
 {
-  "file_version": "1",
+  "file_version": "segona",
   "train.py": "~/work/model/train.py",
   "data": {
     "data_path": "~/work/data/CRF",
@@ -11,22 +11,23 @@
   "parameters": {
     "fixed": {
       "char_emb_dim": 25,
-      "word_emb_dim": 100,
+      "word_emb_dim": 64,
       "val_batch_size": 64,
       "max_epochs": 100
     },
     "iterable": {
-      "rnn_dim": [100, 150, 200, 300],
+      "rnn_dim": [100, 150, 200, 250, 300],
       "char_rnn": [25, 50],
-      "word_min_freq": [0, 5, 10],
-      "train_batch_size": [4,8,16]
+      "word_min_freq": [0, 2, 4, 8, 16],
+      "train_batch_size": [4, 8, 16, 32, 64]
     }
   },
-  "checkpoints": "~/work/checkpoints",
-  "output_train": "training_commands.lst",
-  "test_range": [1,6],
+  "checkpoints": "~/work/trainings/training_2/checkpoints",
+  "output_train": "train_2.cmd",
+  "test_range": [0,249],
   "N_best": 10,
-  "output_test": "test_commands.lst",
-  "logs": "~/work/logs",
-  "predictions": "~/work/predictions"
+  "output_test": "test_commands.cmd",
+  "commands_dir": "~/work/trainings/training_2/commands",
+  "logs": "~/work/trainings/training_2/logs",
+  "predictions": "~/work/trainings/training_2/predictions"
 }
