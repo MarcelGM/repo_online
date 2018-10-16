@@ -1,0 +1,6 @@
+Training	rnn_dim	char_rnn	word_min_freq	train_batch_size	F-score
+0	100	25	0	4	71.34
+1	100	25	0	8	70.58
+2	100	25	0	16	71.00
+3	100	25	0	32	73.01
+4	100	25	0	64	72.34
